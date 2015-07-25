@@ -7,10 +7,13 @@
 
 ### Usage
 
-    docker run -d -p 80:80 dockerfile/nginx
+    docker run -d -p 80:80 -p 443:443 pbecker/nginx
 
-#### Attach persistent/shared directories
+#### Volumes
 
-    docker run -d -p 80:80 -v <sites-enabled-dir>:/etc/nginx/conf.d -v <certs-dir>:/etc/nginx/certs -v <log-dir>:/var/log/nginx -v <html-dir>:/var/www/html dockerfile/nginx
+    Volume: <sites-enabled-dir>:/etc/nginx/conf.d
+    Volume: <certs-dir>:/etc/nginx/certs
+    Volume: <log-dir>:/var/log/nginx
+    Volume: <html-dir>:/var/www/html
 
-After few seconds, open `http://<host>` to see the welcome page.
+Open `http://<host>` to see the welcome page.
