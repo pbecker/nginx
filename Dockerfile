@@ -1,5 +1,5 @@
-# Pull ubuntu 14.04.2 base image
-FROM ubuntu:14.04.2
+# Pull ubuntu 18.04 base image
+FROM ubuntu:18.04
 
 # Install Nginx via ppa.
 RUN \
