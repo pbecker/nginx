@@ -4,7 +4,7 @@ This Docker Image can be used for a nginx proxy.
 
 ### Base Docker Image
 
-* [ubuntu:14.04.2](https://registry.hub.docker.com/_/ubuntu/)
+* [ubuntu:18.04](https://registry.hub.docker.com/_/ubuntu/)
 
 ### Nginx PPA
 
